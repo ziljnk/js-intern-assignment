@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# js-intern-assignment
 
 * Caution: The Back-end must be run first.\
 Step 1: Clone the repository.\
