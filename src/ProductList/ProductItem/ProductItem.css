@@ -1,0 +1,92 @@
+.product-image {
+    width: 80%;
+    background-blend-mode: screen;
+    filter: contrast(1);
+    transform: rotate(-25deg);
+    margin-left: -50px;
+    margin-top: -20px;
+    filter: drop-shadow(4px 25px 15px rgba(0, 0, 0, 0.2));
+    user-select: none;
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.product-description {
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+.product-price-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-price-container .product-price {
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.product-price-container .product-add-button {
+    height: 30px;
+    border-radius: 26px;
+    border: none;
+    padding: 5px 20px;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #f6c90e;
+    cursor: pointer;
+}
+
+.product-add-button:active {
+    animation: myAnim 2s cubic-bezier(0.76, 0, 0.24, 1) 0s 1 normal forwards;
+}
+
+.product-price-container .product-add-button:hover {
+    background-color: rgba(246, 201, 14, .8);
+}
+
+.product-check-icon-container {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #f6c90e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-check-icon-container img {
+    height: 15px;
+}
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}

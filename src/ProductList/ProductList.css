@@ -1,0 +1,95 @@
+*{
+    font-family: 'Rubik', sans-serif;
+}
+
+.background {
+    position: relative; 
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    width: 100%; 
+    height: 70%; 
+    background: #F6C90E;
+    clip-path: ellipse(100% 75% at 25% 100%);
+    bottom: 0;
+    transform: scaleX(-1);
+}
+
+.background .card {
+    height: 500px;
+    width: 300px;
+    background-color: white;
+    z-index: 10;
+    border-radius: 28px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 12px 28px;
+}
+
+.background .card::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #F6C90E;
+    border-radius: 50%;
+    left: -110px;
+    top: -70px;
+    z-index: -1;
+}
+
+.background .card .card-logo {
+    height: 20px;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.product-list-container {
+    display: flex;
+    gap: 80px;
+    flex-direction: column;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    height: 80%;
+}
+
+.product-list-container::-webkit-scrollbar {
+    display: none;
+}
+
+.cart-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-header .total-price {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cart-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    overflow: scroll;
+    height: 80%;
+}
+
+.cart-list-container::-webkit-scrollbar {
+    display: none;
+}

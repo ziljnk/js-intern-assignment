@@ -1,0 +1,18 @@
+.cart-image-container {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-image-container img {
+    width: 150%;
+    background-blend-mode: screen;
+    filter: drop-shadow(4px 25px 15px rgba(0, 0, 0, 0.2));
+    transform: rotate(-25deg);
+    margin-top: -30px;
+    user-select: none;
+}
+
